@@ -1,0 +1,21 @@
+export const ICON = {
+  JS: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 2v20h20V2H2zm11.3 15.3c-.7.9-1.4 1.6-2.8 1.6-1.5 0-2.4-.7-2.9-1.5l1.5-.9c.3.5.6.9 1.3.9.7 0 1.1-.3 1.1-1.2V11h1.8v6.3zm4.9 1.6c-1.4 0-2.3-.7-2.8-1.5l1.5-.9c.3.5.7.9 1.3.9.7 0 1.1-.3 1.1-1.2v-4.3h1.8v4.3c0 1.7-1 2.7-2.9 2.7z"/></svg>`,
+  PY: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C7.588 2 4 5.589 4 10v2h8v-2H7V10c0-2.756 2.243-5 5-5h2c2.209 0 4 1.791 4 4v2h-4v2h4c0 4.411-3.589 8-8 8H9c-2.209 0-4-1.791-4-4v-2H1v2c0 4.411 3.589 8 8 8h2c4.412 0 8-3.589 8-8v-2h2V10c0-4.411-3.588-8-8-8h-2z"/></svg>`,
+  C: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><text x="4" y="17" font-size="14">C</text></svg>`,
+  JAVA: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M8 21c7 2 14-1 11-6-4 3-9 3-11 6zM8 17c5-1 10-3 9-8-1 4-4 5-9 8zM12 13c1-2 4-4 1-7 1 3-2 5-1 7z"/></svg>`,
+  HTML: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 2l2 18 7 2 7-2 2-18H3zm14 6H9l.3 3h7.4l-.6 6-4.2 1-4.3-1-.2-2h2.1l.1 1 2.3.6 2.3-.6.3-3H7.7L7 5h10l-.3 3z"/></svg>`,
+  CSS: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 2l2 18 7 2 7-2 2-18H3zm13.1 6H9.3l.3 3h5.8l-.3 3-2.8.8-2.9-.8-.2-2H6.5l.3 4 5.1 1.4 5.1-1.4.7-8.2z"/></svg>`,
+  REACT: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="2"/><path d="M12 2c-1.8 0-3.5.5-4.9 1.4L12 12l4.9-8.6C15.5 2.5 13.8 2 12 2zm0 20c1.8 0 3.5-.5 4.9-1.4L12 12l-4.9 8.6c1.4.9 3.1 1.4 4.9 1.4z"/></svg>`,
+  TAILWIND: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 4c-4 0-6 3-7 5 2-2 4-3 6-2s3 3 4 4c2 2 4 2 6 0-1-2-3-7-9-7zM5 12c-4 0-6 3-7 5 2-2 4-3 6-2s3 3 4 4c2 2 4 2 6 0-1-2-3-7-9-7z"/></svg>`,
+  VITE: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l5 5H7l5-5z"/></svg>`,
+  NODE: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l10 6v8l-10 6-10-6V8l10-6z"/></svg>`,
+  EXPRESS: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><text x="1" y="16" font-size="10">Express</text></svg>`,
+  MONGO: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l3 7-3 13-3-13z"/></svg>`,
+  GIT: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 12l9-9 9 9-9 9-9-9z"/></svg>`,
+  GITHUB: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 .5A11.5 11.5 0 000 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.8-1.4-3.8-1.4-.5-1.3-1.2-1.7-1.2-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2.9 1.7 2.3 1.2 2.9.9.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.4 1.2-3.3-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.4 1.2a11.3 11.3 0 016.2 0c2.4-1.5 3.4-1.2 3.4-1.2.6 1.6.3 2.8.2 3.1.8.9 1.2 2 1.2 3.3 0 4.6-2.7 5.5-5.3 5.8.5.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A11.5 11.5 0 0024 12 11.5 11.5 0 0012 .5z"/></svg>`,
+  VSCODE: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M2 8l3-3 9 7-9 7-3-3 6-4z"/><path d="M14 5l8 7-8 7V5z"/></svg>`,
+  VERCEL: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2l10 20H2z"/></svg>`,
+  NETLIFY: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 12l9-9 9 9-9 9z"/></svg>`,
+  PWA: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M3 4h18v16H3z"/></svg>`,
+  SW: `<svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="8"/></svg>`
+};

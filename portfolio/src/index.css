@@ -1,0 +1,74 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* === Particles & Sparks CSS === */
+
+/* container sits above canvas but below UI (z-index interplay) */
+.gold-sparks-container {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0; /* IMPORTANT: make sure main content uses z-index > 0 */
+}
+
+/* gold spark look & drift animation (you already had similar rules) */
+@keyframes drift {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-80px) translateX(40px) scale(0.8);
+    opacity: 0.12;
+  }
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(0) translateX(0) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-50px) translateX(-30px) scale(0.9);
+    opacity: 0.12;
+  }
+}
+
+.spark-gold {
+  background: radial-gradient(circle, rgba(212,175,55,1), rgba(143,122,47,0.9));
+  filter: blur(1px);
+  box-shadow: 0 6px 18px rgba(212,175,55,0.12), inset 0 0 6px rgba(255,240,180,0.2);
+  animation-name: drift;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+/* smaller particle dot motion */
+.particle-dot {
+  animation-name: particle-float;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  will-change: transform, opacity;
+}
+
+/* ensure main content sits above the visual layer */
+body > #root > div {
+  position: relative;
+  z-index: 10; /* keep the app content above particles. adjust if needed */
+}
+
+/* Optional: tone down on mobile to improve perf */
+@media (max-width: 640px) {
+  .spark-gold {
+    filter: blur(0.5px);
+  }
+}
