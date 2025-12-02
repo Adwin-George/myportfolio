@@ -43,14 +43,14 @@ export default function Navbar({ isDark, setIsDark, resumeHref }) {
               </a>
             </div>
 
-            {/* Resume Download */}
-            <a
-              href={resumeHref}
-              download
-              className="px-3 py-2 rounded-md border border-gray-200 dark:border-slate-700 text-sm text-gray-700 dark:text-gray-200 hover:bg-gold/10 transition"
-            >
-              Resume
-            </a>
+           <a 
+  href="/resume.pdf"
+  download="Adwin_George_Resume.pdf"
+  className="cursor-pointer"
+>
+  Resume
+</a>
+
 
             {/* Dark Mode Toggle */}
             <button
